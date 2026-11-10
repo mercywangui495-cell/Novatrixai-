@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Novatrix AI – Ads, logos and social media designs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#fff;--soft:#f3f6fc;--ink:#0f172a;--mute:#52607a;--line:#e3e8f2;--brand:#1d4ed8;--on:#fff;--wa:#16a34a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1220;--soft:#141b2e;--ink:#f1f5ff;--mute:#a3b0c9;--line:#25304a;--brand:#5b8cff}}
+:root[data-theme="dark"]{--bg:#0d1220;--soft:#141b2e;--ink:#f1f5ff;--mute:#a3b0c9;--line:#25304a;--brand:#5b8cff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.02em}.logo b{color:var(--brand)}
+nav{display:flex;gap:26px;font-size:15px;font-weight:500;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--brand);color:var(--on);font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px;border:0;cursor:pointer}
+.btn.sm{padding:10px 18px;font-size:14px}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.btn.wa{background:var(--wa);color:#fff}
+.hero{padding:72px 0 56px;text-align:center}
+h1{font-size:clamp(34px,6.4vw,60px);line-height:1.1;letter-spacing:-.03em;margin:0 auto 18px;max-width:760px;font-weight:800}
+.hero p{font-size:19px;color:var(--mute);max-width:560px;margin:0 auto 30px}
+.note{display:block;margin-top:14px;font-size:14px;color:var(--mute)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;background:var(--soft);border-radius:20px;padding:28px 16px;text-align:center;margin-bottom:8px}
+.stats strong{display:block;font-size:clamp(26px,5vw,38px);font-weight:800;color:var(--brand);line-height:1.1}
+.stats span{font-size:14px;color:var(--mute)}
+section{padding:72px 0}
+h2{font-size:clamp(28px,4.6vw,40px);line-height:1.15;letter-spacing:-.02em;margin:0 0 10px;font-weight:800}
+.sub{color:var(--mute);margin:0 0 36px;max-width:560px}
+.grid{display:grid;gap:18px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{border:1px solid var(--line);border-radius:18px;padding:26px;background:var(--bg)}
+.card h3{margin:14px 0 6px;font-size:20px;letter-spacing:-.01em}
+.card p{margin:0;color:var(--mute);font-size:16px}
+.ico{width:48px;height:48px;border-radius:14px;background:var(--soft);display:grid;place-items:center;color:var(--brand)}
+.ico svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.alt{background:var(--soft)}
+.work{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.tile{border-radius:18px;overflow:hidden;background:var(--bg);border:1px solid var(--line)}
+.art{position:relative;overflow:hidden;aspect-ratio:4/3;display:grid;place-items:center;text-align:center;padding:14px;font-weight:800;font-size:26px;line-height:1.05;color:#fff}
+.art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile div.cap{padding:14px 18px}.tile b{display:block}.tile small{color:var(--mute);font-size:14px}
+.steps{counter-reset:s;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.step{counter-increment:s}
+.step::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--brand);color:var(--on);font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 4px;font-size:18px}.step p{margin:0;color:var(--mute);font-size:15px}
+.price{display:flex;flex-direction:column}
+.price .amt{font-size:36px;font-weight:800;letter-spacing:-.02em;margin:10px 0 0}
+.price .kes{color:var(--mute);font-size:14px;margin-bottom:12px}
+.price.pop{border:2px solid var(--brand);position:relative}
+.badge{position:absolute;top:-13px;left:22px;background:var(--brand);color:var(--on);font-size:13px;font-weight:700;padding:3px 12px;border-radius:999px}
+.price .btn{margin-top:auto;text-align:center}
+.price p{margin-bottom:20px}
+.about{display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.about p{color:var(--mute)}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--brand);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 0;color:var(--mute)}
+.cta{background:linear-gradient(135deg,#1d4ed8,#6d28d9);position:relative;overflow:hidden;color:var(--on);border-radius:28px;padding:56px 24px;text-align:center}
+.cta h2{color:var(--on)}.cta p{opacity:.9;margin:0 auto 26px;max-width:480px}
+.cta .btn{background:#fff;color:#0f172a}
+.contact{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;margin-top:24px;font-size:15px;opacity:.95}
+footer{padding:28px 0 100px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+.float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--wa);color:#fff;font-weight:700;font-size:15px;padding:13px 20px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.herobg{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--soft),var(--bg))}
+.herobg::before,.herobg::after{content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;pointer-events:none}
+.herobg::before{width:320px;height:320px;background:#93b4ff;top:-100px;left:-80px}
+.herobg::after{width:280px;height:280px;background:#c4a8ff;top:40px;right:-80px}
+.hero{position:relative;z-index:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:26px auto 0;max-width:620px}
+.chips span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:600;color:var(--mute)}
+.mocks{display:flex;justify-content:center;gap:16px;margin-top:44px;flex-wrap:wrap}
+.mock{width:190px;aspect-ratio:4/5;border-radius:20px;color:#fff;font-weight:800;font-size:26px;line-height:1.05;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;text-align:left;box-shadow:0 18px 40px rgba(29,78,216,.22)}
+.mock small{font-size:13px;font-weight:500;opacity:.9;margin-top:6px}
+.mock:nth-child(1){transform:rotate(-5deg);background:linear-gradient(160deg,#f97316,#be123c)}
+.mock:nth-child(2){transform:translateY(-14px);background:linear-gradient(160deg,#2563eb,#7c3aed)}
+.mock:nth-child(3){transform:rotate(5deg);background:linear-gradient(160deg,#0f766e,#22c55e)}
+.perks{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));padding-top:48px}
+.perk{display:flex;gap:12px;align-items:flex-start}
+.perk i{flex:none;width:28px;height:28px;border-radius:50%;background:var(--brand);color:var(--on);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:15px}
+.perk b{display:block}.perk span{color:var(--mute);font-size:15px}
+h2::before{content:"";display:block;width:44px;height:5px;border-radius:5px;background:linear-gradient(90deg,var(--brand),#7c3aed);margin-bottom:14px}
+.cta h2::before{margin:0 auto 14px;background:#fff}
+.card,.tile{transition:transform .2s,box-shadow .2s}
+.card:hover,.tile:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(15,23,42,.12)}
+.price.pop{box-shadow:0 16px 36px rgba(29,78,216,.18)}
+.cta::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.12);right:-80px;top:-90px;pointer-events:none}
+.cta>*{position:relative;z-index:1}
+@media(max-width:720px){nav{display:none}section{padding:56px 0}.hero{padding:48px 0 40px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">Novatrix <b>AI</b></a>
+<nav><a href="#services">Services</a><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="btn sm" href="https://wa.me/254714014280?text=Hi%20Novatrix%2C%20I%27d%20like%20a%20free%20mock-up">Get a free mock-up</a>
+</div></header>
+
+<main id="top">
+<div class="herobg"><div class="wrap hero">
+<h1>Ads, logos and social media designs for your brand</h1>
+<p>Send us your business name. We design a free sample ad so you can see the quality before you pay.</p>
+<a class="btn" href="https://wa.me/254714014280?text=Hi%20Novatrix%2C%20I%27d%20like%20a%20free%20mock-up">Get a free mock-up</a>
+<span class="note">Based in Nairobi. Works with brands worldwide.</span>
+<div class="chips"><span>Ads</span><span>Logos</span><span>Brand kits</span><span>Social posts</span><span>Monthly packs</span></div>
+<div class="mocks"><div class="mock">50% OFF<small>This weekend only</small></div><div class="mock">Glow up<small>New salon offers</small></div><div class="mock">New drop<small>Fresh sneakers in</small></div></div>
+<span class="note">Sample ad designs</span>
+</div></div>
+
+<div class="wrap"><div class="stats">
+<div><strong>Free</strong><span>Mock-up before you pay</span></div>
+<div><strong>24–48h</strong><span>Turnaround</span></div>
+<div><strong>2</strong><span>Free revision rounds</span></div>
+</div></div>
+
+<div class="wrap"><div class="perks"><div class="perk"><i>✓</i><div><b>See it first</b><span>A free mock-up before you pay.</span></div></div><div class="perk"><i>✓</i><div><b>Fast delivery</b><span>24 to 48 hours for a single ad.</span></div></div><div class="perk"><i>✓</i><div><b>Easy payment</b><span>M-Pesa, bank transfer or card.</span></div></div></div></div>
+<section id="services"><div class="wrap">
+<h2>What we create</h2><p class="sub">Everything your brand needs to stand out online.</p>
+<div class="grid g4">
+<div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div><h3>Ad design</h3><p>Ads for Instagram, Facebook and WhatsApp that turn scrollers into customers.</p></div>
+<div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.4 5.9.9-4.3 4.1 1 5.8L12 16.3 6.8 19.2l1-5.8L3.5 9.3l5.9-.9z"/></svg></div><h3>Logo and brand identity</h3><p>A logo, colours and fonts that make your business look professional.</p></div>
+<div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5"/></svg></div><h3>Social media content</h3><p>Posters, promos and post designs, ready to publish.</p></div>
+<div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><h3>Monthly packs</h3><p>A full month of designs and a content plan, so you post consistently.</p></div>
+</div></div></section>
+
+<section id="work" class="alt"><div class="wrap">
+<h2>Our work</h2><p class="sub">Concept projects showing the quality we bring to your brand.</p>
+<div class="work">
+<div class="tile"><div class="art" style="background:linear-gradient(135deg,#7c2d12,#c2410c)"><span>THE ROYAL PLATE</span><img src="royal-plate.jpg" alt="The Royal Plate restaurant ad" onerror="this.remove()"></div><div class="cap"><b>The Royal Plate</b><small>Restaurant ad campaign</small></div></div>
+<div class="tile"><div class="art" style="background:linear-gradient(135deg,#9d174d,#db2777)"><span>Glow Beauty Studio</span><img src="glow-beauty.jpg" alt="Glow Beauty Studio ad" onerror="this.remove()"></div><div class="cap"><b>Glow Beauty Studio</b><small>Beauty and salon advertising</small></div></div>
+<div class="tile"><div class="art" style="background:linear-gradient(135deg,#1e3a8a,#2563eb)"><span>STREET KICKS</span><img src="street-kicks.jpg" alt="Street Kicks sneaker ad" onerror="this.remove()"></div><div class="cap"><b>Street Kicks</b><small>Sneaker advertising</small></div></div>
+<div class="tile"><div class="art" style="background:linear-gradient(135deg,#111827,#374151)"><span>VORTEX LUXE</span><img src="vortex-luxe.jpg" alt="Vortex Luxe streetwear brand" onerror="this.remove()"></div><div class="cap"><b>Vortex Luxe</b><small>Streetwear brand identity</small></div></div>
+<div class="tile"><div class="art" style="background:linear-gradient(135deg,#0c4a6e,#0891b2)"><span>NEXORA</span><img src="nexora-tech.jpg" alt="Nexora Tech brand concept" onerror="this.remove()"></div><div class="cap"><b>Nexora Tech</b><small>Technology brand concept</small></div></div>
+</div>
+<p style="margin-top:32px"><a class="btn" href="https://wa.me/254714014280?text=Hi%20Novatrix%2C%20I%27d%20like%20a%20free%20mock-up">Want this for your brand? Get a free mock-up</a></p>
+</div></section>
+
+<section><div class="wrap">
+<h2>How it works</h2><p class="sub">Five steps from first message to finished designs.</p>
+<div class="steps">
+<div class="step"><h3>Get in touch</h3><p>Message us on WhatsApp, Instagram or email.</p></div>
+<div class="step"><h3>Share your vision</h3><p>Tell us your ideas and goals.</p></div>
+<div class="step"><h3>Plan your project</h3><p>We agree on the creative direction.</p></div>
+<div class="step"><h3>Approve the details</h3><p>Confirm scope, price and timeline.</p></div>
+<div class="step"><h3>We deliver</h3><p>Your designs, ready to use.</p></div>
+</div></div></section>
+
+<section id="pricing" class="alt"><div class="wrap">
+<h2>Simple, clear pricing</h2><p class="sub">Starting points. The final price depends on your project.</p>
+<div class="grid g3">
+<div class="card price"><h3>Starter Ad Pack</h3><div class="amt">$149</div><div class="kes">about KES 20,000</div><p>3 social media ad designs, delivered fast.</p><a class="btn" href="https://wa.me/254714014280?text=Hi%20Novatrix%2C%20I%27m%20interested%20in%20the%20Starter%20Ad%20Pack">Choose Starter</a></div>
+<div class="card price pop"><span class="badge">Most popular</span><h3>Brand Kit</h3><div class="amt">$390</div><div class="kes">about KES 50,000</div><p>Logo, colour palette and typography.</p><a class="btn" href="https://wa.me/254714014280?text=Hi%20Novatrix%2C%20I%27m%20interested%20in%20the%20Brand%20Kit">Choose Brand Kit</a></div>
+<div class="card price"><h3>Monthly Campaign Pack</h3><div class="amt">$690</div><div class="kes">about KES 90,000</div><p>12 social media designs per month, plus a content plan.</p><a class="btn" href="https://wa.me/254714014280?text=Hi%20Novatrix%2C%20I%27m%20interested%20in%20the%20Monthly%20Campaign%20Pack">Choose Monthly</a></div>
+</div>
+<p class="sub" style="margin:24px 0 0">Need something different? <a href="https://wa.me/254714014280" style="color:var(--brand);font-weight:700">Ask for a custom quote</a>.</p>
+</div></section>
+
+<section id="about"><div class="wrap about">
+<div><h2>Built in Nairobi. Ready for the world.</h2>
+<p>Novatrix AI is an AI creative studio founded by King in Nairobi. We combine AI-powered tools with human creative direction to help small and growing businesses look professional online. Every design is reviewed and refined by us before it reaches you.</p></div>
+<div class="card"><h3 style="margin-top:0">Free mock-up first</h3><p>Send your business name and what you sell. We design a sample ad or logo concept for your brand so you can see the quality before you pay.</p></div>
+</div></section>
+
+<section class="alt"><div class="wrap" style="max-width:760px">
+<h2>Questions</h2>
+<details><summary>How does the free mock-up work?</summary><p>Send your business name and what you sell. We design a sample ad or logo concept for your brand so you can see the quality before you pay.</p></details>
+<details><summary>How long does a design take?</summary><p>24 to 48 hours for a single ad design.</p></details>
+<details><summary>Can I ask for changes?</summary><p>Yes. Every package includes two revision rounds.</p></details>
+<details><summary>What files do I get?</summary><p>Ready-to-post images for social media, plus source files with the Brand Kit.</p></details>
+<details><summary>How do I pay?</summary><p>M-Pesa, bank transfer or card.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="cta">
+<h2>Let’s build your brand</h2>
+<p>Message us today for a free mock-up.</p>
+<a class="btn" href="https://wa.me/254714014280?text=Hi%20Novatrix%2C%20I%27d%20like%20a%20free%20mock-up">Message us on WhatsApp</a>
+<div class="contact"><a href="https://wa.me/254714014280">WhatsApp 0714014280</a><a href="mailto:contact.novatrixai@gmail.com">contact.novatrixai@gmail.com</a><a href="https://instagram.com/novatrixai">Instagram @novatrixai</a><span>Nairobi, Kenya</span></div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Novatrix AI. All rights reserved.</span><a href="https://instagram.com/novatrixai">Instagram @novatrixai</a></div></footer>
+<a class="float" href="https://wa.me/254714014280?text=Hi%20Novatrix" aria-label="Chat on WhatsApp">WhatsApp</a>
+</body>
+</html>
